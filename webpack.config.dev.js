@@ -9,7 +9,6 @@ module.exports = {
     'webpack-dev-server/client?http://127.0.0.1:8080',
     'webpack/hot/dev-server',
     './src/js/index',
-    './src/js/a',
     './src/less/main.less'
   ],
   output: {
@@ -49,7 +48,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './',
     hot: true
   }
 }

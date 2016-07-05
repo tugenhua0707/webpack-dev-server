@@ -1,12 +1,20 @@
-/*
-// es6的语法 
-let LOADER = true; 
-module.exports = LOADER;
-*/
 
-function a(){
-	console.log("a");
-	console.log(11);
-	console.log(222444);
+class funA {
+  constructor(name) {
+    this.name = name;
+  }
+  init() {
+    console.log(this.name + " hello world");
+  }
 }
-a();
+
+function run() {
+  console.log("导出一个函数");
+}
+
+function cModule(){
+  console.log("该模块为私有的，不需要导出");
+}
+
+export default {funA,run}
+
